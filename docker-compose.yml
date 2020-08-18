@@ -1,0 +1,30 @@
+version: '3.1'
+
+services:
+  api:
+    build:
+      context: ./
+    restart: on-failure
+    volumes:
+      - ./:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    command: 'npm run dev'
+
+  db:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+volumes:
+  node_modules:
