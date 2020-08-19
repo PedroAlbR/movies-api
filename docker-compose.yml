@@ -12,7 +12,7 @@ services:
       - 8000:8000
     depends_on:
       - db
-    command: 'npm run dev'
+    command: 'npm start'
 
   db:
     image: mysql:8.0
