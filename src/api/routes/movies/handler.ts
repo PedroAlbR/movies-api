@@ -26,3 +26,13 @@ export function createMovie(req, res) {
       res.status(400).json({ message: error.message, status: 400 })
     })
 }
+
+export function editMovie(req, res) {
+  const { id } = req.params;
+
+  return MOVIES.edit(id, req.body)
+    .then((data) => res.json(data))
+    .catch((error) =>
+      res.status(400).json({ message: error.message, status: 400 })
+    );
+}

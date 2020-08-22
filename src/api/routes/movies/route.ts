@@ -12,7 +12,7 @@ router.delete('/:id/comments:id', (req, res) => res.send(req.url));
 router.post('/:id/rating', (req, res) => res.send(req.url));
 
 router.get('/:id', handler.getMovieById); // Get single movie
-router.put('/:id', (req, res) => res.send(req.url)); // Edit single movie
+router.put('/:id', handler.editMovie); // Edit single movie
 router.delete('/:id', (req, res) => res.send(req.url)); // Delete single movie
 
 router.get('/', handler.getMovies); // Get all movies
