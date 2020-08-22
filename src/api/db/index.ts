@@ -110,3 +110,7 @@ export function getMovies(table: string, { q, offset, limit = 10 }: { q: string 
   return result.limit(limit)
     .timeout(1000, { cancel: true });
 }
+
+export function remove(table: string, id: string) {
+  return baseQuery(table).where({ id }).del()
+}

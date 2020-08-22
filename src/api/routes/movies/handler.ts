@@ -3,7 +3,7 @@ import * as MOVIES from './model';
 
 export function getMovieById(req, res) {
   return MOVIES.getById(req.params.id)
-    .then((data) => res.json(data.reverse()))
+    .then((data) => res.json(data))
     .catch((error) => res.status(404).json({ message: error.message, status: 404 }));
 }
 
