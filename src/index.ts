@@ -1,17 +1,16 @@
-'use strict';
-
 import express from "express";
+import cors from "cors";
+import * as db from "./api/db";
+import routes from "./api/routes";
+import { API_PORT } from "./api/constants";
 
 const app = express();
-const port = 8000; // default port to listen
 
-// define a route handler for the default home page
-app.get('/', (req, res) => {
-  res.send('Hello world!');
-});
+app.use(express.json());
+app.use(cors());
+app.use(routes);
 
-// start the Express server
-app.listen(port, () => {
-  // tslint:disable-next-line:no-console
-  console.log(`server started at http://localhost:${port}`);
-});
+db.connect().then(() => app.listen(API_PORT, () =>
+  console.log(`server started at http://localhost:${API_PORT}`)
+)).catch((error: Error) => console.log(error.message));
+
