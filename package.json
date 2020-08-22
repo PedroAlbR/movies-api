@@ -8,6 +8,8 @@
   },
   "scripts": {
     "build": "tsc",
+    "migrate:latest": "npx knex migrate:latest",
+    "migrate-and-run": "npm run migrate:latest && npm start",
     "start": "nodemon",
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "prestart": "npm run build",

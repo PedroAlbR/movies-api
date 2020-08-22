@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import * as db from "./api/db";
 import routes from "./api/routes";
-import { API_PORT } from "./api/constants";
+import { API_PORT } from "./constants";
 
 const app = express();
 

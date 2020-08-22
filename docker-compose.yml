@@ -14,7 +14,7 @@ services:
       - db
     links:
       - db
-    command: ./wait-for-it.sh -t 60 db:3306 -- npm start
+    command: ./wait-for-it.sh -t 60 db:3306 -- npm run migrate-and-run
     env_file: .env
 
   db:
@@ -22,6 +22,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+      MYSQL_DATABASE: api
     ports:
       - 3306:3306
     command: --default-authentication-plugin=mysql_native_password

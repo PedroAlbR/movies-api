@@ -7,29 +7,10 @@ import {
   DB_USER,
   DB_PASSWORD,
   DB_NAME,
-  DB_NAME_DEFAULT,
-  MYSQL_SCHEMA,
-} from '../constants';
+  DB_SCHEMA,
+} from '../../constants';
 
 let knex;
-
-function createDBIfDoesNotExists() {
-  const tmpClient = knexLib({
-    client: 'mysql',
-    connection: {
-      host: DB_HOST,
-      user: DB_USER,
-      password: DB_PASSWORD,
-      database: DB_NAME_DEFAULT,
-      port: Number(DB_PORT),
-    },
-  });
-
-  return tmpClient
-    .raw('CREATE DATABASE ??', ['chat'])
-    .then(() => tmpClient.destroy())
-    .then(connect);
-}
 
 export function connect() {
   console.log(`Connecting to MySQL at ${DB_HOST}:${DB_PORT}`);
@@ -47,12 +28,11 @@ export function connect() {
 
   return knex
     .table('information_schema.tables')
-    .first()
-    .catch(createDBIfDoesNotExists);
+    .first();
 }
 
 function baseQuery(table) {
-  return knex.withSchema(MYSQL_SCHEMA).table(table);
+  return knex.withSchema(DB_SCHEMA).table(table);
 }
 
 export function get(table, key) {
@@ -62,15 +42,15 @@ export function get(table, key) {
 export function put(table, key, value, upsert, getId) {
   if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
 
-  const putObj = key ? Object.assign({}, value, { id: key }) : value,
-    insert = baseQuery(table).insert(putObj),
-    update = knex.update(putObj).where({ [`${table}.id`]: putObj.id }),
-    query = upsert
-      ? knex.raw(`? ON CONFLICT ON CONSTRAINT ${table}_pkey DO ?`, [
-        insert,
-        update,
-      ])
-      : insert;
+  const putObj = key ? Object.assign({}, value, { id: key }) : value;
+  const insert = baseQuery(table).insert(putObj);
+  const update = knex.update(putObj).where({ [`${table}.id`]: putObj.id });
+  const query = upsert
+    ? knex.raw(`? ON CONFLICT ON CONSTRAINT ${table}_pkey DO ?`, [
+      insert,
+      update,
+    ])
+    : insert;
 
   return getId
     ? query.returning('id').then((ID) => Object.assign(value, { id: ID[0] }))
@@ -106,4 +86,19 @@ export function getBy(table, conditions) {
   });
 
   return query;
+}
+
+export function getMovies(table, { name, offset, limit = 10 }) {
+  let result = knex(table).select('*');
+
+  if (name) {
+    result = result.whereRaw(`LOWER (name) LIKE LOWER (%${name}%)`);
+  }
+
+  if (offset) {
+    result = result.offset(offset);
+  }
+
+  return result.limit(limit)
+    .timeout(1000, { cancel: true });
 }
