@@ -16,6 +16,6 @@ router.put('/:id', (req, res) => res.send(req.url)); // Edit single movie
 router.delete('/:id', (req, res) => res.send(req.url)); // Delete single movie
 
 router.get('/', handler.getMovies); // Get all movies
-router.post('/', (req, res) => res.send(req.url)); // Create movie
+router.post('/', handler.createMovie); // Create movie
 
 export default router;

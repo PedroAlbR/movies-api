@@ -8,11 +8,21 @@ export function getMovieById(req, res) {
 }
 
 export function getMovies(req, res) {
-  const { params } = req;
+  const { query } = req;
 
-  return MOVIES.get(params)
+  return MOVIES.get(query)
     .then((data) => res.json(data))
     .catch((error) =>
       res.status(400).json({ message: error.message, status: 400 })
     );
+}
+
+export function createMovie(req, res) {
+  const { name, director } = req.body;
+
+  return MOVIES.create({ name, director })
+    .then(data => res.json(data))
+    .catch(error => {
+      res.status(400).json({ message: error.message, status: 400 })
+    })
 }

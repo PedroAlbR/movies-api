@@ -10,7 +10,7 @@ import {
   DB_SCHEMA,
 } from '../../constants';
 
-let knex;
+let knex: knexLib;
 
 export function connect() {
   console.log(`Connecting to MySQL at ${DB_HOST}:${DB_PORT}`);
@@ -31,33 +31,30 @@ export function connect() {
     .first();
 }
 
-function baseQuery(table) {
+function baseQuery(table: string) {
   return knex.withSchema(DB_SCHEMA).table(table);
 }
 
-export function get(table, key) {
+export function get(table: string, key: string) {
   return getByField(table, 'id', key);
 }
 
-export function put(table, key, value, upsert, getId) {
+export function put(table: string, key: string, value: any) {
   if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
 
   const putObj = key ? Object.assign({}, value, { id: key }) : value;
-  const insert = baseQuery(table).insert(putObj);
   const update = knex.update(putObj).where({ [`${table}.id`]: putObj.id });
-  const query = upsert
-    ? knex.raw(`? ON CONFLICT ON CONSTRAINT ${table}_pkey DO ?`, [
-      insert,
-      update,
-    ])
-    : insert;
 
-  return getId
-    ? query.returning('id').then((ID) => Object.assign(value, { id: ID[0] }))
-    : query.then(() => value);
+  return update.then(() => value);
 }
 
-export function getByField(table, field, value) {
+export function create(table: string, value: any) {
+  const insert = baseQuery(table).insert(value);
+
+  return insert.then(() => value);
+}
+
+export function getByField(table: string, field: string, value: any) {
   if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
 
   return baseQuery(table)
@@ -66,10 +63,9 @@ export function getByField(table, field, value) {
     .then(getResponse(value));
 }
 
-function getResponse(key) {
-  if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
-
-  return (resp) => {
+function getResponse(key: string) {
+  return (resp: any[]) => {
+    if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
     if (!resp.length)
       return Promise.reject(new Error(`Specified key "${key}" not found.`));
 
@@ -77,22 +73,27 @@ function getResponse(key) {
   };
 }
 
-export function getBy(table, conditions) {
+export function getBy(table: string, conditions: any[][]) {
   const query = baseQuery(table).select('*');
 
-  conditions.forEach((condition) => {
-    if (condition.length > 1) return query.where(...condition);
+  conditions.forEach((condition: any[]) => {
+    const [first, second, third] = condition;
+
+    if (condition.length > 1) {
+      return third ? query.where(first, second, third) : query.where(first, second);
+    }
+
     console.log('trace', 'Need at least two elements', { where: condition });
   });
 
   return query;
 }
 
-export function getMovies(table: string, { name, offset, limit = 10 }: { name: string; offset: string; limit?: number; }) {
+export function getMovies(table: string, { name, offset, limit = 10 }: { name: string; offset: number; limit?: number; }) {
   let result = knex(table).select('*');
 
   if (name) {
-    result = result.whereRaw(`LOWER (name) LIKE LOWER (%${name}%)`);
+    result = result.whereRaw(`LOWER (name) LIKE LOWER ('%${name}%')`);
   }
 
   if (offset) {

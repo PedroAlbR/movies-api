@@ -11,8 +11,8 @@ export async function up(knex: Knex): Promise<void> {
     t.text('name').notNullable();
     t.timestamp('date', { useTz: true }).defaultTo(knex.fn.now());
     t.text('director').notNullable();
-    t.text('rating');
-    t.boolean('active');
+    t.integer('rating').defaultTo(0);
+    t.boolean('active').defaultTo(true);
   })
 }
 
