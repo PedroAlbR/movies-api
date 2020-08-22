@@ -43,7 +43,7 @@ export function put(table: string, key: string, value: any) {
   if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
 
   const putObj = key ? Object.assign({}, value, { id: key }) : value;
-  const update = knex.update(putObj).where({ [`${table}.id`]: putObj.id });
+  const update = baseQuery(table).update(putObj).where({ [`${table}.id`]: putObj.id });
 
   return update.then(() => value);
 }
@@ -89,15 +89,22 @@ export function getBy(table: string, conditions: any[][]) {
   return query;
 }
 
-export function getMovies(table: string, { name, offset, limit = 10 }: { name: string; offset: number; limit?: number; }) {
-  let result = knex(table).select('*');
+export function getMovies(table: string, { q, offset, limit = 10 }: { q: string | string[], offset: number; limit?: number; }) {
+  const result = baseQuery(table).select('*');
 
-  if (name) {
-    result = result.whereRaw(`LOWER (name) LIKE LOWER ('%${name}%')`);
+  if (q) {
+    if (!Array.isArray(q)) q = [q]
+
+    q.forEach(v => {
+      const [key, value] = v.split(':');
+
+      if (!key || !value) return;
+      result.whereRaw(`LOWER (${key}) like LOWER ('%${value}%')`);
+    })
   }
 
   if (offset) {
-    result = result.offset(offset);
+    result.offset(offset);
   }
 
   return result.limit(limit)
