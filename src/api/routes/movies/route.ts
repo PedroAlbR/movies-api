@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/:id', handler.getMovieById);
 router.put('/:id', handler.editMovie);
-router.delete('/:id', (req, res) => res.send(req.url));
+router.post('/:id/archive', handler.archiveMovie);
 
 router.get('/:id/comments', commentsHandler.getComments);
 

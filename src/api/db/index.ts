@@ -90,7 +90,7 @@ export function getBy(table: string, conditions: any[][]) {
 }
 
 export function getMovies(table: string, { q, offset, limit = 10 }: { q: string | string[], offset: number; limit?: number; }) {
-  const result = baseQuery(table).select('*');
+  const result = baseQuery(table).select('*').whereNot({ active: 0 });
 
   if (q) {
     if (!Array.isArray(q)) q = [q]
@@ -113,4 +113,10 @@ export function getMovies(table: string, { q, offset, limit = 10 }: { q: string 
 
 export function remove(table: string, id: string) {
   return baseQuery(table).where({ id }).del()
+}
+
+export function archiveMovie(table: string, id: string) {
+  return baseQuery(table)
+    .update({ active: knex.raw('NOT ??', ['active']) })
+    .where({ [`${table}.id`]: id });
 }

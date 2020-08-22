@@ -36,3 +36,13 @@ export function editMovie(req, res) {
       res.status(400).json({ message: error.message, status: 400 })
     );
 }
+
+export function archiveMovie(req, res) {
+  const { id } = req.params;
+
+  return MOVIES.archive(id)
+    .then(() => res.send("Movie toggled"))
+    .catch((error) =>
+      res.status(400).json({ message: error.message, status: 400 })
+    );
+}

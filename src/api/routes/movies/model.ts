@@ -16,3 +16,7 @@ export function create(params) {
 export function edit(id, params) {
   return db.put(TABLES.movies, id, params);
 }
+
+export function archive(id) {
+  return db.archiveMovie(TABLES.movies, id);
+}
