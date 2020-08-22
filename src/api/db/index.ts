@@ -88,7 +88,7 @@ export function getBy(table, conditions) {
   return query;
 }
 
-export function getMovies(table, { name, offset, limit = 10 }) {
+export function getMovies(table: string, { name, offset, limit = 10 }: { name: string; offset: string; limit?: number; }) {
   let result = knex(table).select('*');
 
   if (name) {
