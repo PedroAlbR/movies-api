@@ -1,4 +1,4 @@
-'use strict';
+import { ParsedQs } from "qs";
 import knexLib from 'knex';
 import logger from "clay-log";
 import {
@@ -50,7 +50,7 @@ export function put(table: string, key: string, value: any) {
   return update.then(() => value);
 }
 
-export function create(table: string, value: any) {
+export function create(table: string, value: object) {
   const insert = baseQuery(table).insert(value);
 
   return insert.then(() => value);
@@ -75,10 +75,10 @@ function getResponse(key: string) {
   };
 }
 
-export function getBy(table: string, conditions: any[][]) {
+export function getBy(table: string, conditions: string[][]) {
   const query = baseQuery(table).select('*');
 
-  conditions.forEach((condition: any[]) => {
+  conditions.forEach((condition: string[]) => {
     const [first, second, third] = condition;
 
     if (condition.length > 1) {
@@ -91,13 +91,13 @@ export function getBy(table: string, conditions: any[][]) {
   return query;
 }
 
-export function getMovies(table: string, { q, offset, limit = 10 }: { q: string | string[], offset: number; limit?: number; }) {
+export function getMovies(table: string, { q, offset, limit = 10 }: any) {
   const result = baseQuery(table).select('*').whereNot({ active: 0 });
 
   if (q) {
     if (!Array.isArray(q)) q = [q];
 
-    q.forEach(v => {
+    q.forEach((v: string) => {
       const [key, value] = v.split(':');
 
       if (!key || !value) return;

@@ -1,8 +1,8 @@
 import md5 from 'md5';
 
 export function encodePassword(pw: string, opts = { salt: '', rounds: 0 }) {
-  const salt = opts.salt || new Date().getTime(),
-    rounds = opts.rounds || 10;
+  const salt = opts.salt || new Date().getTime();
+  const rounds = opts.rounds || 10;
 
   let hashed = md5(pw + salt);
 

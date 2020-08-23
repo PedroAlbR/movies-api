@@ -11,11 +11,11 @@ export function get(id: string) {
   return db.get(TABLES.comments, id);
 }
 
-export function create(params: any) {
+export function create(params: object) {
   return db.create(TABLES.comments, params);
 }
 
-export function edit(id: string, params: { text: string; }) {
+export function edit(id: string, params: any) {
   return db.put(TABLES.comments, id, params);
 }
 

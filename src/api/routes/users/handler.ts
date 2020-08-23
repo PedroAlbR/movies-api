@@ -37,8 +37,8 @@ export function createUser(req: express.Request, res: express.Response) {
 }
 
 export function editUser(req: express.Request, res: express.Response) {
-  const { id } = req.params,
-    { password } = req.body;
+  const { id } = req.params;
+  const { password } = req.body;
 
   return USERS.edit(id, { password })
     .then((data) => res.json(data))

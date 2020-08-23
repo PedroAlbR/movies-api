@@ -9,11 +9,11 @@ export function get(id: string) {
   return db.getByField(TABLES.users, 'username', id);
 }
 
-export function create(params: any) {
+export function create(params: object) {
   return db.create(TABLES.users, params);
 }
 
-export function edit(id: string, params: { password: string; }) {
+export function edit(id: string, params: any) {
   return db.put(TABLES.users, id, params);
 }
 

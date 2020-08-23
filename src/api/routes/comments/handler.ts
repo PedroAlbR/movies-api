@@ -26,8 +26,8 @@ export function createComment(req: express.Request, res: express.Response) {
 }
 
 export function editComment(req: express.Request, res: express.Response) {
-  const { id } = req.params,
-    { text } = req.body;
+  const { id } = req.params;
+  const { text } = req.body;
 
   return COMMENTS.edit(id, { text })
     .then((data) => res.json(data))
