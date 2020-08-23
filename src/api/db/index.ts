@@ -50,7 +50,7 @@ export function put(table: string, key: string, value: Payload) {
   return update.then(() => value);
 }
 
-export function create(table: string, value: object) {
+export function create(table: string, value: any) {
   const insert = baseQuery(table).insert(value);
 
   return insert.then(() => value);

@@ -1,6 +1,6 @@
 import express from 'express';
 import * as COMMENTS from './model';
-import { validateComment } from '../../helpers/validation';
+import { validateCreateComment, validateEditComment } from '../../helpers/validation';
 
 export function getComments(req: express.Request, res: express.Response) {
   return COMMENTS.getById(req.params.id)
@@ -19,7 +19,7 @@ export function getComment(req: express.Request, res: express.Response) {
 }
 
 export function createComment(req: express.Request, res: express.Response) {
-  const validationError = validateComment(req.body);
+  const validationError = validateCreateComment(req.body);
 
   if (validationError) return res.status(422).json({ message: validationError.message, status: 422 });
 
@@ -32,9 +32,11 @@ export function createComment(req: express.Request, res: express.Response) {
 
 export function editComment(req: express.Request, res: express.Response) {
   const { id } = req.params;
-  const { text } = req.body;
+  const validationError = validateEditComment(req.body);
 
-  return COMMENTS.edit(id, { text })
+  if (validationError) return res.status(422).json({ message: validationError.message, status: 422 });
+
+  return COMMENTS.edit(id, req.body)
     .then((data) => res.json(data))
     .catch((error) =>
       res.status(400).json({ message: error.message, status: 400 })

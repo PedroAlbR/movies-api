@@ -1,5 +1,5 @@
-import { User } from '../../../../types';
 import * as db from '../../db';
+import { User } from '../../../../types';
 import { TABLES } from '../../../constants';
 
 export function getAll() {
@@ -7,7 +7,7 @@ export function getAll() {
 }
 
 export function get(id: string) {
-  return db.getByField(TABLES.users, 'username', id);
+  return db.get(TABLES.users, id);
 }
 
 export function create(params: User) {

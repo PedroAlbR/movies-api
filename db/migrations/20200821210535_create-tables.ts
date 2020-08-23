@@ -19,7 +19,7 @@ export function up(knex: Knex): Promise<void> {
       if (exists) return;
 
       return knex.schema.createTable(TABLES.users, (t) => {
-        t.string('username', 10).primary().notNullable();
+        t.string('id', 10).primary().notNullable();
         t.text('password').notNullable();
       });
     });
@@ -29,7 +29,7 @@ export function up(knex: Knex): Promise<void> {
 
       return knex.schema.createTable(TABLES.comments, (t) => {
         t.increments('id').primary().notNullable();
-        t.string('user', 10).notNullable().references('username').inTable(TABLES.users);
+        t.string('user', 10).notNullable().references('id').inTable(TABLES.users);
         t.integer('movie').unsigned().notNullable().references('id').inTable(TABLES.movies);
         t.text('text').notNullable();
       });

@@ -1,5 +1,6 @@
 import Joi from 'joi';
 
+// Movie
 const movieSchema = Joi.object({
   title: Joi.string().required(),
   director: Joi.string().required(),
@@ -8,19 +9,27 @@ const movieSchema = Joi.object({
   year: Joi.number().integer().required(),
 });
 
-const commentSchema = Joi.object({
-  user: Joi.string().required(),
-  movie: Joi.number().integer(),
+// Comment
+const commentEditSchema = Joi.object({
   text: Joi.string().required(),
 });
 
-const userSchema = Joi.object({
-  username: Joi.string().required(),
+const commentCreateSchema = Joi.object({
+  user: Joi.string().required(),
+  movie: Joi.number().integer(),
+});
+
+// User
+const userEditSchema = Joi.object({
   password: Joi.string().required(),
 });
 
+const userCreateSchema = userEditSchema.append({
+  id: Joi.string().required(),
+});
+
 function validate(schema: Joi.Schema) {
-  return (params: any) :Error | void =>  {
+  return (params: any): Error | void => {
     const { error } = schema.validate(params, { abortEarly: false });
 
     if (error) {
@@ -35,5 +44,9 @@ function validate(schema: Joi.Schema) {
 }
 
 export const validateMovie = validate(movieSchema);
-export const validateComment = validate(commentSchema);
-export const validateUser = validate(userSchema);
+
+export const validateEditComment = validate(commentEditSchema);
+export const validateCreateComment = validate(commentCreateSchema);
+
+export const validateEditUser = validate(userEditSchema);
+export const validateCreateUser = validate(userCreateSchema);

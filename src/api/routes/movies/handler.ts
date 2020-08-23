@@ -32,6 +32,9 @@ export function createMovie(req: express.Request, res: express.Response) {
 
 export function editMovie(req: express.Request, res: express.Response) {
   const { id } = req.params;
+  const validationError = validateMovie(req.body);
+
+  if (validationError) return res.status(422).json({ message: validationError.message, status: 422 });
 
   return MOVIES.edit(id, req.body)
     .then((data) => res.json(data))
