@@ -1,5 +1,6 @@
 import express from 'express';
 import * as MOVIES from './model';
+import { validateMovie } from '../../helpers/validation';
 
 export function getMovieById(req: express.Request, res: express.Response) {
   return MOVIES.getById(req.params.id)
@@ -18,6 +19,10 @@ export function getMovies(req: express.Request, res: express.Response) {
 }
 
 export function createMovie(req: express.Request, res: express.Response) {
+  const validationError = validateMovie(req.body);
+
+  if (validationError) return res.status(422).json({ message: validationError.message, status: 422 });
+
   return MOVIES.create(req.body)
     .then(data => res.json(data))
     .catch(error => {

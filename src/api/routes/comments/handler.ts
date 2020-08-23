@@ -1,5 +1,6 @@
 import express from 'express';
 import * as COMMENTS from './model';
+import { validateComment } from '../../helpers/validation';
 
 export function getComments(req: express.Request, res: express.Response) {
   return COMMENTS.getById(req.params.id)
@@ -18,6 +19,10 @@ export function getComment(req: express.Request, res: express.Response) {
 }
 
 export function createComment(req: express.Request, res: express.Response) {
+  const validationError = validateComment(req.body);
+
+  if (validationError) return res.status(422).json({ message: validationError.message, status: 422 });
+
   return COMMENTS.create(req.body)
     .then(data => res.json(data))
     .catch(error => {
