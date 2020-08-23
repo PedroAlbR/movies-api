@@ -1,0 +1,1402 @@
+[
+  {
+    "title": "Fundamentals of Caring",
+    "genre": "Drama",
+    "director": "Rob Burnett",
+    "studio": "Netflix",
+    "year": 2016
+  },
+  {
+    "title": "Hush",
+    "genre": "Thriller",
+    "director": "Mike Flanagan",
+    "studio": "Intrepid Pictures",
+    "year": 2016
+  },
+  {
+    "title": "Roma",
+    "genre": "Drama",
+    "director": "Alfonso Cuarón",
+    "studio": "Netflix",
+    "year": 2018
+  },
+  {
+    "title": "Lock, Stock, and Two Smoking Barrels",
+    "genre": "Crime",
+    "director": "Guy Ritchie",
+    "studio": "Gramercy Pictures",
+    "year": 1998
+  },
+  {
+    "title": "If Beale Street Could Talk",
+    "genre": "Drama",
+    "director": "Barry Jenkins",
+    "studio": "Annapurna Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Chasing Amy",
+    "genre": "Comedy",
+    "director": "Kevin Smith",
+    "studio": "Miramax Films",
+    "year": 1997
+  },
+  {
+    "title": "On the Basis of Sex",
+    "genre": "Drama",
+    "director": "Mimi Leder",
+    "studio": "Focus Features",
+    "year": 2018
+  },
+  {
+    "title": "Free Solo",
+    "genre": "Documentary",
+    "director": "Elizabeth Chai Vasarhelyi, Jimmy Chin",
+    "studio": "Greenwich Entertainment",
+    "year": 2018
+  },
+  {
+    "title": "Swingers",
+    "genre": "Comedy",
+    "director": "Doug Liman",
+    "studio": "Miramax Films",
+    "year": 1996
+  },
+  {
+    "title": "Julie & Julia",
+    "genre": "Comedy",
+    "director": "Nora Ephron",
+    "studio": "Sony/Columbia Pictures",
+    "year": 2009
+  },
+  {
+    "title": "The Gift",
+    "genre": "Mystery",
+    "director": "Joel Edgerton",
+    "studio": "STX Entertainment",
+    "year": 2015
+  },
+  {
+    "title": "Mississippi Grind",
+    "genre": "Drama",
+    "director": "Ryan Fleck, Anna Boden",
+    "studio": "A24 and DIRECTV",
+    "year": 2015
+  },
+  {
+    "title": "Gaga: Five Foot Two",
+    "genre": "Documentary",
+    "director": "Chris Moukarbel",
+    "studio": "Netflix",
+    "year": 2017
+  },
+  {
+    "title": "IO",
+    "genre": "Science Fiction",
+    "director": "Jonathan Helpert",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Glass",
+    "genre": "Drama",
+    "director": "M. Night Shyamalan",
+    "studio": "Blumhouse",
+    "year": 2019
+  },
+  {
+    "title": "Leon: The Professional",
+    "genre": "Drama",
+    "director": "Luc Besson",
+    "studio": "Columbia Pictures",
+    "year": 1994
+  },
+  {
+    "title": "The Sixth Sense",
+    "genre": "Drama",
+    "director": "M. Night Shyamalan",
+    "studio": "Hollywood/Buena Vista",
+    "year": 1999
+  },
+  {
+    "title": "Mary Poppins",
+    "genre": "Musical",
+    "director": "Robert Stevenson",
+    "studio": "Walt Disney Productions",
+    "year": 1964
+  },
+  {
+    "title": "Mary Poppins Returns",
+    "genre": "Musical",
+    "director": "Rob Marshall",
+    "studio": "Walt Disney Productions",
+    "year": 2018
+  },
+  {
+    "title": "The Negotiator",
+    "genre": "Drama",
+    "director": "F. Gary Gray",
+    "studio": "Warner Bros. Pictures",
+    "year": 1998
+  },
+  {
+    "title": "The Favourite",
+    "genre": "Drama",
+    "director": "Yorgos Lanthimos",
+    "studio": "Fox Searchlight Pictures, Film4 and Waypoint",
+    "year": 2018
+  },
+  {
+    "title": "Rudy",
+    "genre": "Drama",
+    "director": "David Anspaugh",
+    "studio": "Sony Pictures Home Entertainment",
+    "year": 1993
+  },
+  {
+    "title": "Cape Fear",
+    "genre": "Drama",
+    "director": "Martin Scorsese",
+    "studio": "MCA/Universal Pictures",
+    "year": 1991
+  },
+  {
+    "title": "Dragon Ball Super: Broly",
+    "genre": "Action",
+    "director": "Akira Toriyama",
+    "studio": "FUNimation Films",
+    "year": 2019
+  },
+  {
+    "title": "First Reformed",
+    "genre": "Drama",
+    "director": "Paul Schrader",
+    "studio": "A24",
+    "year": 2018
+  },
+  {
+    "title": "End Game",
+    "genre": "Documentary",
+    "director": "Rob Epstein, Jeffrey Friedman",
+    "studio": "Netflix",
+    "year": 2018
+  },
+  {
+    "title": "They Shall Not Grow Old",
+    "genre": "Documentary",
+    "director": "Peter Jackson",
+    "studio": "Warner Bros. Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Casino Royale",
+    "genre": "Action",
+    "director": "Martin Campbell",
+    "studio": "Sony",
+    "year": 2006
+  },
+  {
+    "title": "Mudbound",
+    "genre": "Drama",
+    "director": "Dee Rees",
+    "studio": "Netflix",
+    "year": 2017
+  },
+  {
+    "title": "Best of Enemies",
+    "genre": "Documentary",
+    "director": "Morgan Neville, Robert Gordon",
+    "studio": "Magnolia Pictures",
+    "year": 2015
+  },
+  {
+    "title": "Alita: Battle Angel",
+    "genre": "Fantasy",
+    "director": "Robert Rodriguez",
+    "studio": "20th Century Fox",
+    "year": 2019
+  },
+  {
+    "title": "Death Note",
+    "genre": "Mystery",
+    "director": "Adam Wingard",
+    "studio": "Vertigo Entertainment",
+    "year": 2017
+  },
+  {
+    "title": "Paddleton",
+    "genre": "Drama",
+    "director": "Alexandre Lehmann",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Enter the Dragon",
+    "genre": "Action",
+    "director": "Robert Clouse",
+    "studio": "Warner Home Video",
+    "year": 1973
+  },
+  {
+    "title": "Heat",
+    "genre": "Action",
+    "director": "Michael Mann",
+    "studio": "Warner Bros.",
+    "year": 1995
+  },
+  {
+    "title": "The Night Comes for Us",
+    "genre": "Action",
+    "director": "Timo Tjahjanto",
+    "studio": "Netflix",
+    "year": 2018
+  },
+  {
+    "title": "A Star is Born",
+    "genre": "Drama",
+    "director": "Bradley Cooper",
+    "studio": "Warner Bros. Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Captain Marvel",
+    "genre": "Action",
+    "director": "Anna Boden, Ryan Fleck",
+    "studio": "Marvel Studios",
+    "year": 2019
+  },
+  {
+    "title": "Prospect",
+    "genre": "Science Fiction",
+    "director": "Zeek Earl, Christopher Caldwell (II)",
+    "studio": "DUST",
+    "year": 2019
+  },
+  {
+    "title": "Triple Frontier",
+    "genre": "Action",
+    "director": "J.C. Chandor",
+    "studio": "Atlas Entertainment",
+    "year": 2019
+  },
+  {
+    "title": "Rudderless",
+    "genre": "Drama",
+    "director": "William H. Macy",
+    "studio": "Samuel Goldwyn",
+    "year": 2014
+  },
+  {
+    "title": "Colossal",
+    "genre": "Science Fiction",
+    "director": "Nacho Vigalondo",
+    "studio": "NEON",
+    "year": 2017
+  },
+  {
+    "title": "Private Life",
+    "genre": "Drama",
+    "director": "Tamara Jenkins",
+    "studio": "Netflix",
+    "year": 2018
+  },
+  {
+    "title": "Sorry to Bother You",
+    "genre": "Comedy",
+    "director": "Boots Riley",
+    "studio": "Annapurna Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Gattaca",
+    "genre": "Science Fiction",
+    "director": "Andrew Niccol",
+    "studio": "Columbia Pictures",
+    "year": 1997
+  },
+  {
+    "title": "Layer Cake",
+    "genre": "Action",
+    "director": "Matthew Vaughn",
+    "studio": "Sony Classics",
+    "year": 2005
+  },
+  {
+    "title": "Sleeping with Other People",
+    "genre": "Romance",
+    "director": "Leslye Headland",
+    "studio": "IFC Films",
+    "year": 2015
+  },
+  {
+    "title": "Lady-Like",
+    "genre": "Romance",
+    "director": "Brent Craft",
+    "studio": "Craftsmen Media Co.",
+    "year": 2017
+  },
+  {
+    "title": "Annie Hall",
+    "genre": "Romance",
+    "director": "Woody Allen",
+    "studio": "United Artists",
+    "year": 1977
+  },
+  {
+    "title": "Us",
+    "genre": "Horror",
+    "director": "Jordan Peele",
+    "studio": "Universal Pictures",
+    "year": 2019
+  },
+  {
+    "title": "The Devil Wears Prada",
+    "genre": "Comedy",
+    "director": "David Frankel",
+    "studio": "20th Century Fox",
+    "year": 2006
+  },
+  {
+    "title": "Minority Report",
+    "genre": "Science Fiction",
+    "director": "Steven Spielberg",
+    "studio": "Dreamworks",
+    "year": 2002
+  },
+  {
+    "title": "Oldboy",
+    "genre": "Drama",
+    "director": "Chan-wook Park",
+    "studio": "Tartan FIlms",
+    "year": 2005
+  },
+  {
+    "title": "Face/Off",
+    "genre": "Action",
+    "director": "John Woo",
+    "studio": "Paramount Pictures",
+    "year": 1997
+  },
+  {
+    "title": "Twelve Monkies",
+    "genre": "Science Fiction",
+    "director": "Terry Gilliam",
+    "studio": "Universal Pictures",
+    "year": 1995
+  },
+  {
+    "title": "The Highwaymen",
+    "genre": "Drama",
+    "director": "John Lee Hancock",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Stan & Ollie",
+    "genre": "Comedy",
+    "director": "Jon S. Baird",
+    "studio": "Sony Pictures Classic",
+    "year": 2018
+  },
+  {
+    "title": "Donnie Darko",
+    "genre": "Science Fiction",
+    "director": "Richard Kelly",
+    "studio": "Newmarket Film Group",
+    "year": 2001
+  },
+  {
+    "title": "The Interview",
+    "genre": "Drama",
+    "director": "Craig Monahan",
+    "studio": "Cinema Guild",
+    "year": 2000
+  },
+  {
+    "title": "High Fidelity",
+    "genre": "Comedy",
+    "director": "Stephen Frears",
+    "studio": "Buena Vista",
+    "year": 2000
+  },
+  {
+    "title": "I Am Legend",
+    "genre": "Action",
+    "director": "Francis Lawrence",
+    "studio": "Warner Bros. Pictures",
+    "year": 2007
+  },
+  {
+    "title": "What We Do In The Shadows",
+    "genre": "Comedy",
+    "director": "Taika Waititi, Jemaine Clement",
+    "studio": "Paladin Pictures",
+    "year": 2015
+  },
+  {
+    "title": "Shazam!",
+    "genre": "Science Fiction",
+    "director": "David F. Sandberg",
+    "studio": "New Line Cinema",
+    "year": 2019
+  },
+  {
+    "title": "Pet Sematary",
+    "genre": "Horror",
+    "director": "Kevin Kölsch, Dennis Widmyer",
+    "studio": "Paramount Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Hunger",
+    "genre": "Drama",
+    "director": "Steve McQueen (III)",
+    "studio": "IFC Films",
+    "year": 2008
+  },
+  {
+    "title": "Rush Hour 2",
+    "genre": "Comedy",
+    "director": "Brett Ratner",
+    "studio": "New Line Cinema",
+    "year": 2001
+  },
+  {
+    "title": "The Dirt",
+    "genre": "Drama",
+    "director": "Jeff Tremaine",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Batman Begins",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "studio": "Warner Bros. Pictures",
+    "year": 2005
+  },
+  {
+    "title": "The Dark Knight",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "studio": "Warner Bros. Pictures/Legendary",
+    "year": 2008
+  },
+  {
+    "title": "The Dark Knight Rises",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "studio": "Warner Bros. Pictures",
+    "year": 2012
+  },
+  {
+    "title": "Soapdish",
+    "genre": "Comedy",
+    "director": "Michael Hoffman",
+    "studio": "Paramount Home Video",
+    "year": 1991
+  },
+  {
+    "title": "The Matrix Reloaded",
+    "genre": "Science Fiction",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "studio": "Warner Bros. Pictures",
+    "year": 2003
+  },
+  {
+    "title": "The Expendables 3",
+    "genre": "Action",
+    "director": "Patrick Hughes",
+    "studio": "Lionsgate Pictures",
+    "year": 2014
+  },
+  {
+    "title": "The Godfather",
+    "genre": "Drama",
+    "director": "Francis Ford Coppola",
+    "studio": "Paramount Pictures",
+    "year": 1972
+  },
+  {
+    "title": "Avengers: Infinity War",
+    "genre": "Action",
+    "director": "Anthony Russo, Joe Russo",
+    "studio": "Marvel Studios",
+    "year": 2018
+  },
+  {
+    "title": "Avengers: Endgame",
+    "genre": "Action",
+    "director": "Anthony Russo, Joe Russo",
+    "studio": "Marvel Studios",
+    "year": 2019
+  },
+  {
+    "title": "Fracture",
+    "genre": "Drama",
+    "director": "Gregory Hoblit",
+    "studio": "New Line",
+    "year": 2007
+  },
+  {
+    "title": "Avengers: Endgame",
+    "genre": "Action",
+    "director": "Anthony Russo, Joe Russo",
+    "studio": "Marvel Studios",
+    "year": 2019
+  },
+  {
+    "title": "Extremely Wicked, Shockingly Evil and Vile",
+    "genre": "Mystery",
+    "director": "Joe Berlinger",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Thor: Ragnorak",
+    "genre": "Action",
+    "director": "Taika Waititi",
+    "studio": "Walt Disney Pictures",
+    "year": 2017
+  },
+  {
+    "title": "Point Break",
+    "genre": "Action",
+    "director": "Kathryn Bigelow",
+    "studio": "Twentieth Century Fox Home Entertainment",
+    "year": 1991
+  },
+  {
+    "title": "Deliverance",
+    "genre": "Adventure",
+    "director": "John Boorman",
+    "studio": "Warner Bros.",
+    "year": 1972
+  },
+  {
+    "title": "Guava Island",
+    "genre": "Drama",
+    "director": "Hiro Murai",
+    "studio": "",
+    "year": 2019
+  },
+  {
+    "title": "My Cousin Vinny",
+    "genre": "Comedy",
+    "director": "Jonathan Lynn",
+    "studio": "Twentieth Century Fox Home Entertainment",
+    "year": 1992
+  },
+  {
+    "title": "Love, Rosie",
+    "genre": "Romance",
+    "director": "Christian Ditter",
+    "studio": "Film Arcade",
+    "year": 2015
+  },
+  {
+    "title": "Newness",
+    "genre": "Drama",
+    "director": "Drake Doremus",
+    "studio": "Giant Interactive",
+    "year": 2017
+  },
+  {
+    "title": "The Sandlot",
+    "genre": "Comedy",
+    "director": "David Mickey Evans",
+    "studio": "20th Century Fox",
+    "year": 1993
+  },
+  {
+    "title": "Pokemon Detective Pikachu",
+    "genre": "Adventure",
+    "director": "Rob Letterman",
+    "studio": "Warner Bros. Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Best in Show",
+    "genre": "Comedy",
+    "director": "Christopher Guest",
+    "studio": "Warner Bros. Pictures",
+    "year": 2000
+  },
+  {
+    "title": "Mulan",
+    "genre": "Adventure",
+    "director": "Barry Cook, Tony Bancroft",
+    "studio": "Buena Vista",
+    "year": 1998
+  },
+  {
+    "title": "Perfect Bid: The Contestant That Knew Too Much",
+    "genre": "Documentary",
+    "director": "C.J. Wallis",
+    "studio": "FortyFPS Productions",
+    "year": 2017
+  },
+  {
+    "title": "Just Friends",
+    "genre": "Romance",
+    "director": "Roger Kumble",
+    "studio": "New Line Cinema",
+    "year": 2005
+  },
+  {
+    "title": "Brightburn",
+    "genre": "Science Fiction",
+    "director": "David Yarovesky",
+    "studio": "Screen Gems",
+    "year": 2019
+  },
+  {
+    "title": "The Perfection",
+    "genre": "Drama",
+    "director": "Richard Shepard",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Arctic",
+    "genre": "Drama",
+    "director": "Joe Penna",
+    "studio": "Bleecker Street",
+    "year": 2019
+  },
+  {
+    "title": "The Good, The Bag, and The Ugly",
+    "genre": "Western",
+    "director": "Sergio Leone",
+    "studio": "United Artists",
+    "year": 1966
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "genre": "Fantasy",
+    "director": "Peter Jackson",
+    "studio": "New Line Cinema",
+    "year": 2001
+  },
+  {
+    "title": "The Lord of the Rings: The Two Towers",
+    "genre": "Fantasy",
+    "director": "Peter Jackson",
+    "studio": "New Line Cinema",
+    "year": 2002
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "genre": "Fantasy",
+    "director": "Peter Jackson",
+    "studio": "New Line Cinema",
+    "year": 2003
+  },
+  {
+    "title": "I Am Mother",
+    "genre": "Science Fiction",
+    "director": "Grant Sputore",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Always Be My Maybe",
+    "genre": "Comedy",
+    "director": "Nahnatchka Khan",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Bridget Jones's Diary",
+    "genre": "Comedy",
+    "director": "Sharon Maguire",
+    "studio": "Miramax",
+    "year": 2001
+  },
+  {
+    "title": "Crazy, Stupid, Love.",
+    "genre": "Comedy",
+    "director": "Glenn Ficarra, John Requa",
+    "studio": "Warner Bros. Pictures",
+    "year": 2011
+  },
+  {
+    "title": "Baywatch",
+    "genre": "Comedy",
+    "director": "Seth Gordon",
+    "studio": "Paramount Pictures",
+    "year": 2017
+  },
+  {
+    "title": "Ghost in the Shell",
+    "genre": "Science Fiction",
+    "director": "Jonathan Herman, Jamie Moss",
+    "studio": "Paramount Pictures",
+    "year": 2017
+  },
+  {
+    "title": "Set It Up",
+    "genre": "Comedy",
+    "director": "Claire Scanlon",
+    "studio": "Netflix",
+    "year": 2018
+  },
+  {
+    "title": "Booksmart",
+    "genre": "Comedy",
+    "director": "Olivia Wilde",
+    "studio": "United Artists",
+    "year": 2019
+  },
+  {
+    "title": "About Time",
+    "genre": "Drama",
+    "director": "Richard Curtis",
+    "studio": "Universal Pictures",
+    "year": 2013
+  },
+  {
+    "title": "Dragged Across Concrete",
+    "genre": "Action",
+    "director": "S. Craig Zahler",
+    "studio": "Summit Entertainment",
+    "year": 2019
+  },
+  {
+    "title": "Rocketman",
+    "genre": "Drama",
+    "director": "Dexter Fletcher",
+    "studio": "Paramount Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Toy Story 4",
+    "genre": "Family",
+    "director": "Josh Cooley",
+    "studio": "Disney/Pixar",
+    "year": 2019
+  },
+  {
+    "title": "Yesterday",
+    "genre": "Drama",
+    "director": "Danny Boyle",
+    "studio": "Universal Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Aladdin",
+    "genre": "Family",
+    "director": "Guy Ritchie",
+    "studio": "Walt Disney Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Bumblebee",
+    "genre": "Science Fiction",
+    "director": "Travis Knight",
+    "studio": "Paramount Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Spider-Man: Far From Home",
+    "genre": "Science Fiction",
+    "director": "Jon Watts",
+    "studio": "Sony Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Groundhog Day",
+    "genre": "Comedy",
+    "director": "Harold Ramis",
+    "studio": "Columbia Pictures",
+    "year": 1993
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "genre": "Science Fiction",
+    "director": "Bob Persichetti, Peter Ramsey, Rodney Rothman",
+    "studio": "Sony Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Midsommar",
+    "genre": "Horror",
+    "director": "Ari Aster",
+    "studio": "A24",
+    "year": 2019
+  },
+  {
+    "title": "As Good as It Gets",
+    "genre": "Romance",
+    "director": "James L. Brooks",
+    "studio": "TriStar Pictures",
+    "year": 1997
+  },
+  {
+    "title": "She's Out of My League",
+    "genre": "Romance",
+    "director": "Jim Field Smith",
+    "studio": "Paramount",
+    "year": 2010
+  },
+  {
+    "title": "The Break-Up",
+    "genre": "Romance",
+    "director": "Peyton Reed",
+    "studio": "Universal Pictures",
+    "year": 2006
+  },
+  {
+    "title": "Superbad",
+    "genre": "Comedy",
+    "director": "Greg Mottola",
+    "studio": "Sony Pictures/Columbia",
+    "year": 2007
+  },
+  {
+    "title": "The Art of Self-Defense",
+    "genre": "Comedy",
+    "director": "Riley Stearns",
+    "studio": "Bleecker Street",
+    "year": 2019
+  },
+  {
+    "title": "The Lion King",
+    "genre": "Adventure",
+    "director": "Jon Favreau",
+    "studio": "Walt Disney Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Long Shot",
+    "genre": "Comedy",
+    "director": "Jonathan Levine",
+    "studio": "Jonathan Levine",
+    "year": 2019
+  },
+  {
+    "title": "Caddyshack",
+    "genre": "Comedy",
+    "director": "Harold Ramis",
+    "studio": "Warner Bros. Pictures",
+    "year": 1980
+  },
+  {
+    "title": "Once Upon a Time in Hollywood",
+    "genre": "Comedy",
+    "director": "Quentin Tarantino",
+    "studio": "Columbia Pictures",
+    "year": 2019
+  },
+  {
+    "title": "The Red Sea Diving Resort",
+    "genre": "Drama",
+    "director": "Gideon Raff",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Hulk Vs.",
+    "genre": "Adventure",
+    "director": "Sam Liu, Frank Paur",
+    "studio": "Lionsgate Entertainment",
+    "year": 2009
+  },
+  {
+    "title": "Apocalypse Now: Directors Cut",
+    "genre": "Drama",
+    "director": "Francis Ford Coppola",
+    "studio": "United Artists",
+    "year": 2019
+  },
+  {
+    "title": "A Quiet Place",
+    "genre": "Suspense",
+    "director": "John Krasinski",
+    "studio": "Paramount Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Cowboy Bebop: The Movie",
+    "genre": "Science Fiction",
+    "director": "Shinichirô Watanabe",
+    "studio": "Destination Films",
+    "year": 2003
+  },
+  {
+    "title": "Dora and the Lost City of Gold",
+    "genre": "Adventure",
+    "director": "James Bobin",
+    "studio": "Paramount Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Wolf of Wall Street",
+    "genre": "Drama",
+    "director": "Martin Scorsese",
+    "studio": "Paramount Pictures",
+    "year": 2013
+  },
+  {
+    "title": "Blinded by the Light",
+    "genre": "Drama",
+    "director": "Gurinder Chadha",
+    "studio": "New Line Cinema",
+    "year": 2019
+  },
+  {
+    "title": "The Mask of Zorro",
+    "genre": "Adventure",
+    "director": "Martin Campbell",
+    "studio": "Sony Pictures Entertainment",
+    "year": 1998
+  },
+  {
+    "title": "Fighting with my Family",
+    "genre": "Drama",
+    "director": "Stephen Merchant",
+    "studio": "MGM",
+    "year": 2019
+  },
+  {
+    "title": "Reservoir Dogs",
+    "genre": "Drama",
+    "director": "Quentin Tarantino",
+    "studio": "Miramax Films",
+    "year": 1992
+  },
+  {
+    "title": "Iron Man",
+    "genre": "Adventure",
+    "director": "Jon Favreau",
+    "studio": "Paramount Pictures",
+    "year": 2008
+  },
+  {
+    "title": "Brawl in Cell Block 99",
+    "genre": "Action",
+    "director": "S. Craig Zahler",
+    "studio": "RLJE Films",
+    "year": 2017
+  },
+  {
+    "title": "The Matrix",
+    "genre": "Science Fiction",
+    "director": "Lilly Wachowski, Lana Wachowski",
+    "studio": "Warner Bros. Pictures",
+    "year": 1999
+  },
+  {
+    "title": "Godzilla: King of the Monsters",
+    "genre": "Science Fiction",
+    "director": "Michael Dougherty",
+    "studio": "Warner Bros. Pictures",
+    "year": 2019
+  },
+  {
+    "title": "The King of Comedy",
+    "genre": "Comedy",
+    "director": "Martin Scorsese",
+    "studio": "Fox",
+    "year": 1983
+  },
+  {
+    "title": "It",
+    "genre": "Horror",
+    "director": "Andy Muschietti",
+    "studio": "Warner Bros. Pictures",
+    "year": 2017
+  },
+  {
+    "title": "It Chapter Two",
+    "genre": "Horror",
+    "director": "Andy Muschietti",
+    "studio": "New Line Cinema",
+    "year": 2019
+  },
+  {
+    "title": "Stranger Than Fiction",
+    "genre": "Comedy",
+    "director": "Zach Helm",
+    "studio": "Sony Pictures",
+    "year": 2006
+  },
+  {
+    "title": "Drunken Master",
+    "genre": "Action",
+    "director": "Woo-ping Yuen",
+    "studio": "Sony Pictures Home Entertainment",
+    "year": 1978
+  },
+  {
+    "title": "Teen Titans Go! To The Movies",
+    "genre": "Family",
+    "director": "Aaron Horvath, Peter Rida Michail",
+    "studio": "Warner Bros. Pictures",
+    "year": 2018
+  },
+  {
+    "title": "Matchstick Men",
+    "genre": "Drama",
+    "director": "Ridley Scott",
+    "studio": "Warner Bros. Pictures",
+    "year": 2003
+  },
+  {
+    "title": "Being John Malkovich",
+    "genre": "Comedy",
+    "director": "Charlie Kaufman",
+    "studio": "Gramercy Pictures",
+    "year": 1999
+  },
+  {
+    "title": "Rumble in the Bronx",
+    "genre": "Action",
+    "director": "Stanley Tong, Tong Kwei Lai",
+    "studio": "New Line Cinema",
+    "year": 1995
+  },
+  {
+    "title": "Interstellar",
+    "genre": "Science Fiction",
+    "director": "Christopher Nolan",
+    "studio": "Paramount Pictures",
+    "year": 2014
+  },
+  {
+    "title": "Ad Astra",
+    "genre": "Science Fiction",
+    "director": "James Gray",
+    "studio": "20th Century Fox",
+    "year": 2019
+  },
+  {
+    "title": "Adaptation.",
+    "genre": "Comedy",
+    "director": "Charlie Kaufman, Donald Kaufman",
+    "studio": "Columbia Pictures",
+    "year": 2002
+  },
+  {
+    "title": "Between Two Ferns: The Movie",
+    "genre": "Comedy",
+    "director": "Scott Auckerman",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Joe",
+    "genre": "Drama",
+    "director": "David Gordon Green",
+    "studio": "Roadside Attractions",
+    "year": 2014
+  },
+  {
+    "title": "mid90s",
+    "genre": "Drama",
+    "director": "Jonah Hill",
+    "studio": "A24",
+    "year": 2018
+  },
+  {
+    "title": "Summer '03",
+    "genre": "Comedy",
+    "director": "Becca Gleason",
+    "studio": "Blue Fox Entertainment",
+    "year": 2018
+  },
+  {
+    "title": "Dumb and Dumber",
+    "genre": "Comedy",
+    "director": "Peter Farrelly",
+    "studio": "Warner Bros",
+    "year": 1994
+  },
+  {
+    "title": "Avengement",
+    "genre": "Action",
+    "director": "Jesse V. Johnson",
+    "studio": "Samuel Goldwyn Films",
+    "year": 2019
+  },
+  {
+    "title": "Indiana Jones and the Last Crusade",
+    "genre": "Adventure",
+    "director": "Steven Spielberg",
+    "studio": "Paramount Pictures",
+    "year": 1989
+  },
+  {
+    "title": "Sword of the Stranger",
+    "genre": "Adventure",
+    "director": "Masahiro Andô",
+    "studio": "Shochiku Company",
+    "year": 2007
+  },
+  {
+    "title": "Old School",
+    "genre": "Comedy",
+    "director": "Todd Phillips, Toby Phillips",
+    "studio": "DreamWorks SKG",
+    "year": 2003
+  },
+  {
+    "title": "Ip Man",
+    "genre": "Action",
+    "director": "Wilson Yip",
+    "studio": "Well Go USA",
+    "year": 2009
+  },
+  {
+    "title": "Joker",
+    "genre": "Tragedy",
+    "director": "Todd Phillips",
+    "studio": "Warner Bros. Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Glengarry Glen Ross",
+    "genre": "Drama",
+    "director": "James Foley",
+    "studio": "Artisan Home Entertainment",
+    "year": 1992
+  },
+  {
+    "title": "Mean Girls",
+    "genre": "Comedy",
+    "director": "Mark Waters",
+    "studio": "Paramount Pictures",
+    "year": 2004
+  },
+  {
+    "title": "The Man from Nowhere",
+    "genre": "Action",
+    "director": "Lee Jeong-beom",
+    "studio": "Well Go USA",
+    "year": 2010
+  },
+  {
+    "title": "Zombieland: Double Tap",
+    "genre": "Action",
+    "director": "Ruben Fleischer",
+    "studio": "Columbia Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Akira",
+    "genre": "Action",
+    "director": "Katsuhiro Ôtomo",
+    "studio": "Streamline Pictures",
+    "year": 1989
+  },
+  {
+    "title": "Dolemite Is My Name",
+    "genre": "Comedy",
+    "director": "Craig Brewer",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "The Open House",
+    "genre": "Horror",
+    "director": "Matt Angel, Suzanne Coote",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Lake Mungo",
+    "genre": "Suspense",
+    "director": "Joel Anderson",
+    "studio": "After Dark Films",
+    "year": 2009
+  },
+  {
+    "title": "Terminator: Dark Fate",
+    "genre": "Action",
+    "director": "Tim Miller",
+    "studio": "Paramount Pictures",
+    "year": 2019
+  },
+  {
+    "title": "The King",
+    "genre": "Drama",
+    "director": "David Michôd",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "The Social Network",
+    "genre": "Drama",
+    "director": "David Fincher",
+    "studio": "Columbia Pictures",
+    "year": 2011
+  },
+  {
+    "title": "The Ugly Truth",
+    "genre": "Romance",
+    "director": "Robert Luketic",
+    "studio": "Sony/Columbia Pictures",
+    "year": 2009
+  },
+  {
+    "title": "Holiday in the Wild",
+    "genre": "Romance",
+    "director": "Ernie Barbarash",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Children of Men",
+    "genre": "Drama",
+    "director": "Alfonso Cuarón",
+    "studio": "Universal Pictures",
+    "year": 2006
+  },
+  {
+    "title": "Zombieland",
+    "genre": "Comedy",
+    "director": "Ruben Fleischer",
+    "studio": "Sony/Columbia Pictures",
+    "year": 2009
+  },
+  {
+    "title": "Joker",
+    "genre": "Tragedy",
+    "director": "Todd Phillips",
+    "studio": "Warner Bros. Pictures",
+    "year": 2019
+  },
+  {
+    "title": "The Wandering Earth",
+    "genre": "Science Fiction",
+    "director": "Frant Gwo",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Knives Out",
+    "genre": "Drama",
+    "director": "Rian Johnson",
+    "studio": "Lionsgate",
+    "year": 2019
+  },
+  {
+    "title": "Money Talks",
+    "genre": "Comedy",
+    "director": "Brett Ratner",
+    "studio": "New Line Home Entertainment",
+    "year": 1997
+  },
+  {
+    "title": "A Beautiful Day in the Neighborhood",
+    "genre": "Drama",
+    "director": "Marielle Heller",
+    "studio": "TriStar Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Inglourious Basterds",
+    "genre": "Action",
+    "director": "Quentin Tarantino",
+    "studio": "The Weinstein Company",
+    "year": 2009
+  },
+  {
+    "title": "The Report",
+    "genre": "Drama",
+    "director": "Scott Z. Burns",
+    "studio": "Amazon Studios",
+    "year": 2019
+  },
+  {
+    "title": "Locke",
+    "genre": "Drama",
+    "director": "Steven Knight",
+    "studio": "A24 Films",
+    "year": 2014
+  },
+  {
+    "title": "Christmas with the Kranks",
+    "genre": "Comedy",
+    "director": "Joe Roth",
+    "studio": "Sony Pictures",
+    "year": 2004
+  },
+  {
+    "title": "6 Underground",
+    "genre": "Action",
+    "director": "Michael Bay",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Klaus",
+    "genre": "Adventure",
+    "director": "Sergio Pablos",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Star Wars: The Rise of Skywalker",
+    "genre": "Adventure",
+    "director": "J.J. Abrams",
+    "studio": "Walt Disney Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Marriage Story",
+    "genre": "Drama",
+    "director": "Noah Baumbach",
+    "studio": "Netflix",
+    "year": 2019
+  },
+  {
+    "title": "Frozen 2",
+    "genre": "Adventure",
+    "director": "Jennifer Lee, Chris Buck",
+    "studio": "Walt Disney Pictures",
+    "year": 2019
+  },
+  {
+    "title": "Spider-Man 3",
+    "genre": "Adventure",
+    "director": "Sam Raimi",
+    "studio": "Sony Pictures",
+    "year": 2007
+  },
+  {
+    "title": "Uncut Gems",
+    "genre": "Drama",
+    "director": "Josh Safdie, Benny Safdie",
+    "studio": "A24",
+    "year": 2019
+  },
+  {
+    "title": "Goon",
+    "genre": "Comedy",
+    "director": "Michael Dowse",
+    "studio": "Magnolia Pictures",
+    "year": 2012
+  },
+  {
+    "title": "Goon: Last of the Enforcers",
+    "genre": "Comedy",
+    "director": "Jay Baruchel",
+    "studio": "Momentum Pictures",
+    "year": 2017
+  },
+  {
+    "title": "Mystic River",
+    "genre": "Drama",
+    "director": "Clint Eastwood",
+    "studio": "WB",
+    "year": 2003
+  },
+  {
+    "title": "Parasite",
+    "genre": "Drama",
+    "director": "Bong Joon Ho",
+    "studio": "NEON",
+    "year": 2019
+  }
+]

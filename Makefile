@@ -17,4 +17,10 @@ help:
 	@echo "start: Builds and starts all containers."
 	@echo " stop: Stops all containers, preserving data."
 
+recreate-db:
+	docker-compose exec api npm run recreate-db
+
+seed-db:
+	docker-compose exec api npm run seed-db
+
 default: start

@@ -1,19 +1,17 @@
 import * as Knex from "knex";
-
 import { TABLES } from "../../src/constants";
 
-export async function up(knex: Knex): Promise<void> {
+export function up(knex: Knex): Promise<void> {
   return knex.schema.hasTable(TABLES.movies).then(exists => {
     if (exists) return;
 
     return knex.schema.createTable(TABLES.movies, function (t) {
-      // - cast [ { name, character } ]
-      // - writers [ name ]
-
       t.increments('id').primary().notNullable();
-      t.text('name').notNullable();
-      t.timestamp('date', { useTz: true }).defaultTo(knex.fn.now());
+      t.text('title').notNullable();
       t.text('director').notNullable();
+      t.text('studio').notNullable();
+      t.text('genre').notNullable();
+      t.integer('year').notNullable();
       t.boolean('active').defaultTo(true);
     })
   }).then(() => {
@@ -39,9 +37,9 @@ export async function up(knex: Knex): Promise<void> {
   });
 }
 
-export async function down(knex: Knex): Promise<void> {
-  return knex.schema.dropTableIfExists(TABLES.movies)
-    .then(() => knex.schema.dropTableIfExists(TABLES.comments))
+export function down(knex: Knex): Promise<void> {
+  return knex.schema.dropTableIfExists(TABLES.comments)
+    .then(() => knex.schema.dropTableIfExists(TABLES.movies))
     .then(() => knex.schema.dropTableIfExists(TABLES.users))
 }
 
