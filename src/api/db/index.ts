@@ -1,4 +1,4 @@
-import { ParsedQs } from "qs";
+import { Payload } from '../../../types';
 import knexLib from 'knex';
 import logger from "clay-log";
 import {
@@ -41,10 +41,10 @@ export function get(table: string, key: string) {
   return getByField(table, 'id', key);
 }
 
-export function put(table: string, key: string, value: any) {
+export function put(table: string, key: string, value: Payload) {
   if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
 
-  const putObj = key ? Object.assign({}, value, { id: key }) : value;
+  const putObj = Object.assign({}, value, { id: key });
   const update = baseQuery(table).update(putObj).where({ [`${table}.id`]: putObj.id });
 
   return update.then(() => value);
@@ -62,14 +62,13 @@ export function getByField(table: string, field: string, value: any) {
   return baseQuery(table)
     .select('*')
     .where(field, value)
-    .then(getResponse(value));
+    .then(getResponse(field));
 }
 
 function getResponse(key: string) {
   return (resp: any[]) => {
-    if (!knex) return Promise.reject(new Error('MySQL is not initialized'));
-    if (!resp.length)
-      return Promise.reject(new Error(`Specified key "${key}" not found.`));
+    if (!knex) throw new Error('MySQL is not initialized');
+    if (!resp.length) throw new Error(`Specified key "${key}" not found.`);
 
     return resp[0];
   };
