@@ -1,6 +1,6 @@
 'use strict';
-
 import knexLib from 'knex';
+import logger from "clay-log";
 import {
   DB_HOST,
   DB_PORT,
@@ -12,8 +12,10 @@ import {
 
 let knex: knexLib;
 
+const log = logger.init({ name: __filename });
+
 export function connect() {
-  console.log(`Connecting to MySQL at ${DB_HOST}:${DB_PORT}`);
+  log('info', `Connecting to MySQL at ${DB_HOST}:${DB_PORT}`);
 
   knex = knexLib({
     client: 'mysql',
@@ -83,7 +85,7 @@ export function getBy(table: string, conditions: any[][]) {
       return third ? query.where(first, second, third) : query.where(first, second);
     }
 
-    console.log('trace', 'Need at least two elements', { where: condition });
+    log('debug', 'Need at least two elements', { where: condition });
   });
 
   return query;

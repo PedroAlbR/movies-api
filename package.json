@@ -10,9 +10,11 @@
     "build": "tsc",
     "migrate:latest": "npx knex migrate:latest",
     "migrate-and-run": "npm run migrate:latest && npm start",
+    "seed-db": "npx knex seed:run",
     "start": "nodemon",
     "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "prestart": "npm run build",
+    "recreate-db": "npx knex migrate:down && npx knex migrate:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "nodemonConfig": {
@@ -25,6 +27,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "clay-log": "^1.4.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.21.5",

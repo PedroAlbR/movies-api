@@ -18,9 +18,7 @@ export function getMovies(req, res) {
 }
 
 export function createMovie(req, res) {
-  const { name, director } = req.body;
-
-  return MOVIES.create({ name, director })
+  return MOVIES.create(req.body)
     .then(data => res.json(data))
     .catch(error => {
       res.status(400).json({ message: error.message, status: 400 })
