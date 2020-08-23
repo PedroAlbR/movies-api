@@ -1,13 +1,13 @@
-
+import express from 'express';
 import * as COMMENTS from './model';
 
-export function getComments(req, res) {
+export function getComments(req: express.Request, res: express.Response) {
   return COMMENTS.getById(req.params.id)
     .then((data) => res.json(data))
     .catch((error) => res.status(404).json({ message: error.message, status: 404 }));
 }
 
-export function getComment(req, res) {
+export function getComment(req: express.Request, res: express.Response) {
   const { id } = req.params;
 
   return COMMENTS.get(id)
@@ -17,7 +17,7 @@ export function getComment(req, res) {
     );
 }
 
-export function createComment(req, res) {
+export function createComment(req: express.Request, res: express.Response) {
   return COMMENTS.create(req.body)
     .then(data => res.json(data))
     .catch(error => {
@@ -25,7 +25,7 @@ export function createComment(req, res) {
     });
 }
 
-export function editComment(req, res) {
+export function editComment(req: express.Request, res: express.Response) {
   const { id } = req.params,
     { text } = req.body;
 
@@ -36,7 +36,7 @@ export function editComment(req, res) {
     );
 }
 
-export function deleteComment(req, res) {
+export function deleteComment(req: express.Request, res: express.Response) {
   const { id } = req.params;
 
   return COMMENTS.remove(id)

@@ -1,8 +1,8 @@
-
+import express from 'express';
 import * as USERS from './model';
 import { encodePassword } from '../../helpers';
 
-export function getUsers(req, res) {
+export function getUsers(req: express.Request, res: express.Response) {
   return USERS.getAll()
     .then((data) => res.json(data.map(u => {
       delete u.password;
@@ -11,7 +11,7 @@ export function getUsers(req, res) {
     .catch((error) => res.status(404).json({ message: error.message, status: 404 }));
 }
 
-export function getUser(req, res) {
+export function getUser(req: express.Request, res: express.Response) {
   const { id } = req.params;
 
   return USERS.get(id.toLowerCase())
@@ -24,7 +24,7 @@ export function getUser(req, res) {
     );
 }
 
-export function createUser(req, res) {
+export function createUser(req: express.Request, res: express.Response) {
   const user = req.body;
 
   user.password = encodePassword(user.password);
@@ -36,7 +36,7 @@ export function createUser(req, res) {
     });
 }
 
-export function editUser(req, res) {
+export function editUser(req: express.Request, res: express.Response) {
   const { id } = req.params,
     { password } = req.body;
 
@@ -47,7 +47,7 @@ export function editUser(req, res) {
     );
 }
 
-export function deleteUser(req, res) {
+export function deleteUser(req: express.Request, res: express.Response) {
   const { id } = req.params;
 
   return USERS.remove(id)

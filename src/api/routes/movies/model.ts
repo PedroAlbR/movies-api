@@ -5,18 +5,18 @@ export function getById(id: string) {
   return db.get(TABLES.movies, id);
 }
 
-export function get(params: { q: string | string[], offset: number; limit?: number; }) {
+export function get(params: any) {
   return db.getMovies(TABLES.movies, params);
 }
 
-export function create(params) {
+export function create(params: any) {
   return db.create(TABLES.movies, params);
 }
 
-export function edit(id, params) {
+export function edit(id: string, params: any) {
   return db.put(TABLES.movies, id, params);
 }
 
-export function archive(id) {
+export function archive(id: string) {
   return db.archiveMovie(TABLES.movies, id);
 }

@@ -5,18 +5,18 @@ export function getAll() {
   return db.getBy(TABLES.users, []);
 }
 
-export function get(id) {
+export function get(id: string) {
   return db.getByField(TABLES.users, 'username', id);
 }
 
-export function create(params) {
+export function create(params: any) {
   return db.create(TABLES.users, params);
 }
 
-export function edit(id, params) {
+export function edit(id: string, params: { password: string; }) {
   return db.put(TABLES.users, id, params);
 }
 
-export function remove(id) {
+export function remove(id: string) {
   return db.remove(TABLES.users, id);
 }
