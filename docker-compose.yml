@@ -16,6 +16,7 @@ services:
       - db
     command: ./wait-for-it.sh -t 60 db:3306 -- npm run migrate-and-run
     env_file: .env
+    tty: true
 
   db:
     image: mysql:8.0

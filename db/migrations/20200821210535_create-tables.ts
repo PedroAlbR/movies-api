@@ -13,7 +13,7 @@ export function up(knex: Knex): Promise<void> {
       t.text('genre').notNullable();
       t.integer('year').notNullable();
       t.boolean('active').defaultTo(true);
-    })
+    });
   }).then(() => {
     return knex.schema.hasTable(TABLES.users).then(exists => {
       if (exists) return;
@@ -40,6 +40,6 @@ export function up(knex: Knex): Promise<void> {
 export function down(knex: Knex): Promise<void> {
   return knex.schema.dropTableIfExists(TABLES.comments)
     .then(() => knex.schema.dropTableIfExists(TABLES.movies))
-    .then(() => knex.schema.dropTableIfExists(TABLES.users))
+    .then(() => knex.schema.dropTableIfExists(TABLES.users));
 }
 

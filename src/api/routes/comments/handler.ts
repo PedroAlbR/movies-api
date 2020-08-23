@@ -21,8 +21,8 @@ export function createComment(req, res) {
   return COMMENTS.create(req.body)
     .then(data => res.json(data))
     .catch(error => {
-      res.status(400).json({ message: error.message, status: 400 })
-    })
+      res.status(400).json({ message: error.message, status: 400 });
+    });
 }
 
 export function editComment(req, res) {

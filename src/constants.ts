@@ -8,7 +8,7 @@ export const DB_SCHEMA = process.env.DB_SCHEMA;
 
 
 export const TABLES = {
-    movies: 'movies',
-    comments: 'comments',
-    users: 'user'
-}
+  movies: 'movies',
+  comments: 'comments',
+  users: 'user'
+};

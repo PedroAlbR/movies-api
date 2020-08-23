@@ -95,14 +95,14 @@ export function getMovies(table: string, { q, offset, limit = 10 }: { q: string 
   const result = baseQuery(table).select('*').whereNot({ active: 0 });
 
   if (q) {
-    if (!Array.isArray(q)) q = [q]
+    if (!Array.isArray(q)) q = [q];
 
     q.forEach(v => {
       const [key, value] = v.split(':');
 
       if (!key || !value) return;
       result.whereRaw(`LOWER (${key}) like LOWER ('%${value}%')`);
-    })
+    });
   }
 
   if (offset) {
@@ -114,7 +114,7 @@ export function getMovies(table: string, { q, offset, limit = 10 }: { q: string 
 }
 
 export function remove(table: string, id: string) {
-  return baseQuery(table).where({ id }).del()
+  return baseQuery(table).where({ id }).del();
 }
 
 export function archiveMovie(table: string, id: string) {

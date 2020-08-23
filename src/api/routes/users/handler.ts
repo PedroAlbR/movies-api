@@ -5,7 +5,7 @@ import { encodePassword } from '../../helpers';
 export function getUsers(req, res) {
   return USERS.getAll()
     .then((data) => res.json(data.map(u => {
-      delete u.password
+      delete u.password;
       return u;
     })))
     .catch((error) => res.status(404).json({ message: error.message, status: 404 }));
@@ -32,8 +32,8 @@ export function createUser(req, res) {
   return USERS.create(req.body)
     .then(data => res.json(data))
     .catch(error => {
-      res.status(400).json({ message: error.message, status: 400 })
-    })
+      res.status(400).json({ message: error.message, status: 400 });
+    });
 }
 
 export function editUser(req, res) {
