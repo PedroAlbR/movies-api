@@ -14,7 +14,7 @@ const commentEditSchema = Joi.object({
   text: Joi.string().required(),
 });
 
-const commentCreateSchema = Joi.object({
+const commentCreateSchema = commentEditSchema.append({
   user: Joi.string().required(),
   movie: Joi.number().integer(),
 });
